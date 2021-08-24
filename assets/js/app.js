@@ -504,9 +504,16 @@ $(function() {
   });
 
 
+  if(doc_w < '769'){
+    let subBottom = $(".subnav-content__bottom").innerHeight();
+    $("#nav__inner").animate({paddingBottom: '" '+ subBottom +' "'});
+  }
+
+
   $("*").on("click", function(event){
     event.preventDefault();
   });
+
 
   
 
