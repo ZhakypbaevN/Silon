@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Useful meta tags -->
+    <meta name="description" content="Описание страницы" />
+    <meta name="keywords" content="продажа товаров" />
+    <meta name="google" content="notranslate" />
+
+    <!--Slick slider-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <title>Silon</title>
+</head>
+<body>
+
+
+<div class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__col">
+                    <a href="#" class="header__tel">Phone: +01 256 25 235</a>
+                    <span class="line"></span>
+                    <a href="#" class="header__email">email: info@eiser.com</a>
+                </div>
+                <div class="header__col">
+                    <a href="#" class="header__giftCard">gift card</a>
+                    <span class="line"></span>
+
+                    <a href="#" class="header__trackOrder">track order</a>
+                    <span class="line"></span>
+
+                    <div class="header__lang">
+                        <div class="header__lang--primary">
+                            <span>language</span>
+                            <div class="header__lang--arrow">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite.svg#arrow"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <ul class="subnav__lang">
+                            <li>
+                                <a class="subnav__link active" href="#" >
+                                    ENG
+                                </a>
+                            </li>
+                            <li>
+                                <a class="subnav__link" href="#" >
+                                    RUS
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__primary"  id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="#">
+                    <img src="assets/img/logo.png" alt="Silon Logo">
+                </a>
+
+                <nav class="nav" id="nav">
+                    <div class="nav__inner"  id="nav__inner">
+                        <div class="nav__primary">
+                            <div class="nav__title">Site Navigation</div>
+                        </div>
+                        
+                        <div class="nav__search"></div>
+
+                        <div>
+                            <a href="#" class="nav__link">home</a>
+                            <a href="#" class="nav__link">shop</a>
+                            <a href="#" class="nav__link">blog</a>
+                            <a href="#" class="nav__link">products</a>
+                            <a href="#" class="nav__link">brands</a>
+                            <a href="#" class="nav__link">contact</a>
+                        </div>
+                        
+                    </div>
+
+                    <div id="overlay"></div>
+                </nav>
+
+                <div class="header__acc">       
+                    
+                    <div class="header__acc--search">
+                        <button class="header__acc--searchIcon" type="button">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+
+                        <div id="header__search--div">
+                            <div class="subnav subnav__search">
+                                <label class="search__icon" for="search">
+                                    <svg class="search">
+                                        <use xlink:href="assets/img/sprite.svg#search"></use>
+                                    </svg>
+                                </label>
+            
+                                <input class="search__input" id="search" type="text" placeholder="Search.." name="search" id="search">
+                            </div>
+                        </div>
+                        
+                    </div>
+                   
+                    
+
+                    <div class="header__acc--cart" id="cart">
+                        <button class="header__acc--cartIcon" type="button">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#cart"></use>
+                            </svg>
+                            <span class="header__acc--quantity" id="cartProductQuantity">0</span>
+                        </button>
+
+                        <div class="subnav">
+                            <div>
+                                
+                                <div class="subnav__primary">
+                                    <button class="subnav__btnBuck" type="button">
+                                        <svg>
+                                            <use xlink:href="assets/img/sprite.svg#arrowBack"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="subnav__title">Cart</div>
+                                </div>
+                                <ul class="subnav-content__list" id="cartContentList">
+                                    <li class="subnav-content__item product__item cart__product" data-id="4">
+                                        <article class="subnav-product">
+                                            <div class="subnav-product__content">
+                                                <img src="assets/img/products/4.jpg" alt="" class="subnav-product__img">
+                                                <div class="subnav-product__text">
+                                                    <p class="product__title">Red Women Purses</p>
+                                                    <div class="product__rating">
+                                                        <svg>
+                                                            <use xlink:href="assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg>
+                                                            <use xlink:href="assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg>
+                                                            <use xlink:href="assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg>
+                                                            <use xlink:href="assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg>
+                                                            <use xlink:href="assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="product__price">$<span>15.00</span></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="subnav-product__control">
+                                                <div class="subnav-product__quantity">
+                                                    <button class="subnav-product__quantity--btn subnav-product__btn--plus" type="button">
+                                                        <svg>
+                                                            <use xlink:href="assets/img/sprite.svg#plus"></use>
+                                                        </svg>
+                                                    </button>
+                                                    
+                                                    <div class="subnav-product__quantity--num">1</div>
+                                                    
+                                                    <button class="subnav-product__quantity--btn subnav-product__btn--minus" type="button">
+                                                        <svg>
+                                                            <use xlink:href="assets/img/sprite.svg#minus"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div> 
+                                                <button class="subnav-product__delete product__btnDelete" type="button">
+                                                    <svg>
+                                                        <use xlink:href="assets/img/sprite.svg#trash"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            
+    
+                            <div class="subnav-content__bottom">
+                                <div class="subnav-content__fullprice">
+                                    <span>Total:</span>
+                                    <div class="fullprice">$ <span>0</span></div>
+                                </div>
+                                <div class="btn primary subnav-content__btn">BUY (<span class="subnav-content__btn--num">0</span>)</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="header__acc--like" id="liked">
+                        <button class="header__acc--likeIcon" type="button">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#heart"></use>
+                            </svg>
+                            <span class="header__acc--quantity" id="likedProductQuantity">0</span>
+                        </button>
+
+                        <div class="subnav">
+                            <div>
+                                <div class="subnav__primary">
+                                    <button class="subnav__btnBuck" type="button">
+                                        <svg>
+                                            <use xlink:href="assets/img/sprite.svg#arrowBack"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="subnav__title">Likes</div>
+                                </div>
+
+                                <ul class="subnav-content__list likeContentList">
+                                    <li class="subnav-content__item product__item liked__product" data-id="5">
+                                        <article class="subnav-product">
+                                            <div class="subnav-product__content">
+                                                <img src="assets/img/products/5.jpg" alt="" class="subnav-product__img">
+                                                <div class="subnav-product__text">
+                                                    <p class="product__title">Red Women Purses</p>
+                                                    <div class="product__rating">
+                                                        <svg>
+                                                            <use xlink:href="assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg>
+                                                            <use xlink:href="assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg>
+                                                            <use xlink:href="assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg>
+                                                            <use xlink:href="assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                        <svg>
+                                                            <use xlink:href="assets/img/sprite.svg#star"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="product__price">$<span>15.00</span></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="subnav-product__control">
+                                                <button class="subnav-product__cart liked-product__cart" type="button">
+                                                    <svg>
+                                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                                    </svg>
+                                                    <span class="subnav-product__cart--quantity">
+                                                        <svg>
+                                                            <use xlink:href="assets/img/sprite.svg#checkMark"></use>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                                <button class="subnav-product__delete product__btnDelete" type="button">
+                                                    <svg>
+                                                        <use xlink:href="assets/img/sprite.svg#trash"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <button class="nav-toggle" id="nav_toggle" type="button">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#menu"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="main">
+    <section class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <p class="intro__subtitle">ultimate collection</p>
+                    <h1 class="intro__title">Complete Women <br> Fashion Here</h1>
+                    <a class="btn intro__btn" href="#">show now</a>
+                </div>
+    
+                <div class="intro__preview">
+                    <img src="assets/img/ban-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="featuredProd">
+        <div class="container">
+            <div class="featuredProd__inner">
+                <h2 class="featuredProd__title">Featured product</h2>
+    
+                <div class="featuredProd__items">
+                    <div class="product product__item" data-id="1">
+                        <div class="product__preview">
+                            <img src="assets/img/products/1.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>15.00</span></div>
+                    </div>
+    
+                    <div class="product product__item" data-id="2">
+                        <div class="product__preview">
+                            <img src="assets/img/products/2.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>35.00</span></div>
+                    </div>
+    
+                    <div class="product product__item" data-id="3">
+                        <div class="product__preview">
+                            <img src="assets/img/products/3.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>15.00</span></div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="productSale">
+        <div class="container">
+            <div class="productSale__inner">
+                <div class="productSale__content">
+                    <h2 class="productSale__title">50% off</h2>
+                    <p class="productSale__subtitle">all women’s collection</p>
+                    <a class="btn productSale__btn" href="#">shop now</a>
+                </div>
+    
+                <div class="productSale__preview">
+                    <img src="assets/img/ban-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="productPopular">
+        <div class="container">
+            <div class="productPopular__inner">
+                <div class="productPopular__title">Most popular</div>
+    
+                <div class="productPopular__slider">
+    
+                    <div class="product product__item" data-id="4">
+                        <div class="product__preview">
+                            <img src="assets/img/products/4.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>15.00</span></div>
+                    </div>
+    
+                    <div class="product product__item" data-id="5">
+                        <div class="product__preview">
+                            <img src="assets/img/products/5.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>15.00</span></div>
+                    </div>
+    
+                    <div class="product product__item" data-id="6">
+                        <div class="product__preview">
+                            <img src="assets/img/products/6.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>15.00</span></div>
+                    </div>
+    
+                    <div class="product product__item" data-id="7">
+                        <div class="product__preview">
+                            <img src="assets/img/products/7.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>15.00</span></div>
+                    </div>
+    
+                    <div class="product product__item" data-id="8">
+                        <div class="product__preview">
+                            <img src="assets/img/products/4.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>15.00</span></div>
+                    </div>
+    
+                    <div class="product product__item" data-id="9">
+                        <div class="product__preview">
+                            <img src="assets/img/products/5.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>15.00</span></div>
+                    </div>
+    
+                    <div class="product product__item" data-id="10">
+                        <div class="product__preview">
+                            <img src="assets/img/products/6.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>15.00</span></div>
+                    </div>
+    
+                    <div class="product product__item" data-id="11">
+                        <div class="product__preview">
+                            <img src="assets/img/products/7.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>15.00</span></div>
+                    </div>
+    
+                </div>
+    
+                <div class="productPopular__sliderDots"></div>
+    
+    
+    
+            </div>
+        </div>
+    </section>
+    
+    <div class="features">
+        <div class="container">
+            <div class="features__inner">
+                <div class="feature">
+                    <div class="feature__icon money">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#feature_1"></use>
+                        </svg>
+                    </div>
+                    <div class="feature__title">Money back gurantee</div>
+                    <p class="feature__subtitle">great fill signs he evening</p>
+                </div>
+    
+                <div class="feature">
+                    <div class="feature__icon">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#feature_2"></use>
+                        </svg>
+                    </div>
+                    <div class="feature__title">Free Delivery</div>
+                    <p class="feature__subtitle">great fill signs he evening</p>
+                </div>
+    
+                <div class="feature">
+                    <div class="feature__icon">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#feature_3"></use>
+                        </svg>
+                    </div>
+                    <div class="feature__title">Alway support</div>
+                    <p class="feature__subtitle">great fill signs he evening</p>
+                </div>
+    
+                <div class="feature">
+                    <div class="feature__icon">
+                        <svg>
+                            <use xlink:href="assets/img/sprite.svg#feature_4"></use>
+                        </svg>
+                    </div>
+                    <div class="feature__title">Secure payment</div>
+                    <p class="feature__subtitle">great fill signs he evening</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="productTrend">
+        <div class="container">
+            <div class="productTrend__inner">
+                <h2 class="productTrend__title">Trending products</h2>
+    
+                <div class="productTrend__products">
+    
+                    <div class="product product__item" data-id="11">
+                        <div class="product__preview">
+                            <img src="assets/img/products/8.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>35.00</span></div>
+                    </div>
+                    
+                    <div class="product product__item" data-id="12">
+                        <div class="product__preview">
+                            <img src="assets/img/products/9.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>35.00</span></div>
+                    </div>
+    
+                    <div class="product product__item" data-id="13">
+                        <div class="product__preview">
+                            <img src="assets/img/products/10.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>15.00</span></div>
+                    </div>
+                    
+                    <div class="product product__item" data-id="14">
+                        <div class="product__preview">
+                            <img src="assets/img/products/11.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>35.00</span></div>
+                    </div>
+    
+                    <div class="product product__item" data-id="15">
+                        <div class="product__preview">
+                            <img src="assets/img/products/12.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>15.00</span></div>
+                    </div>
+                    
+                    <div class="product product__item" data-id="16">
+                        <div class="product__preview">
+                            <img src="assets/img/products/13.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>35.00</span></div>
+                    </div>
+    
+                    <div class="product product__item" data-id="17">
+                        <div class="product__preview">
+                            <img src="assets/img/products/14.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>15.00</span></div>
+                    </div>
+                    
+                    <div class="product product__item" data-id="18">
+                        <div class="product__preview">
+                            <img src="assets/img/products/15.jpg" alt="Featured product">
+                            <div class="product__hover">
+                                <a class="product__hover--quickView" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#quickView"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--like product__btnLike" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#heart"></use>
+                                    </svg>
+                                </a>
+                                <a class="product__hover--cart product__btnCart" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#cart"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <p class="product__title">Red Women Purses</p>
+                        <div class="product__rating">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="product__price">$<span>35.00</span></div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <sectoin class="journal">
+        <div class="container">
+            <div class="journal__inner">
+                <h2 class="journal__title">Silon journal</h2>
+    
+                <div class="journal__posts">
+                    <div class="journal__post">
+                        <div class="journal__post--preview">
+                            <img src="assets/img/post/1.jpg" alt="journal">
+                        </div>
+                        <div class="journal__post--content">
+                            <div class="journal__post--data-time">
+                                <time datetime="2019-07-07 19:20">07 July, 2019</time>
+                            </div>
+                            <a class="journal__post--title" href="#">Were divided land his creature which have evening subdue</a>
+                        </div>
+                        <div class="journal__post--btns">
+                            <a class="journal__post--fashion" href="#">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite.svg#box"></use>
+                                </svg>
+                                <p>Woman&nbsp;Fashion</p>
+                            </a>
+                            
+                            <a class="journal__post--comments" href="#">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite.svg#comment"></use>
+                                </svg>
+                                <p><span>2</span>&nbsp;Comments</p>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="journal__post">
+                        <div class="journal__post--preview">
+                            <img src="assets/img/post/2.jpg" alt="journal">
+                        </div>
+                        <div class="journal__post--content">
+                            <div class="journal__post--data-time">
+                                <time datetime="2019-07-07 19:20">07 July, 2019</time>
+                            </div>
+                            <a class="journal__post--title" href="#">Were divided land his creature which have evening subdue</a>
+                        </div>
+                        <div class="journal__post--btns">
+                            <a class="journal__post--fashion" href="#">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite.svg#box"></use>
+                                </svg>
+                                <p>Woman&nbsp;Fashion</p>
+                            </a>
+                            
+                            <a class="journal__post--comments" href="#">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite.svg#comment"></use>
+                                </svg>
+                                <p><span>2</span>&nbsp;Comments</p>
+                            </a>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="journal__post">
+                        <div class="journal__post--preview">
+                            <img src="assets/img/post/3.jpg" alt="journal">
+                        </div>
+                        <div class="journal__post--content">
+                            <div class="journal__post--data-time">
+                                <time datetime="2019-07-07 19:20">07 July, 2019</time>
+                            </div>
+                            <a class="journal__post--title" href="#">Were divided land his creature which have evening subdue</a>
+                        </div>
+                        <div class="journal__post--btns">
+                            <a class="journal__post--fashion" href="#">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite.svg#box"></use>
+                                </svg>
+                                <p>Woman&nbsp;Fashion</p>
+                            </a>
+                            
+                            <a class="journal__post--comments" href="#">
+                                <svg>
+                                    <use xlink:href="assets/img/sprite.svg#comment"></use>
+                                </svg>
+                                <p><span>2</span>&nbsp;Comments</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </sectoin>
+    
+    <sectoin class="instagram">
+        <div class="container">
+            <div class="instagram__inner">
+                <h2 class="instagram__title">Follow us</h2>
+    
+                <div class="instagram__posts">
+                    <div class="instagram__post">
+                        <img src="assets/img/instagram/1.jpg" alt="instagram">
+    
+                        <a class="instagram__hover" href="#">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="instagram__post">
+                        <img src="assets/img/instagram/2.jpg" alt="instagram">
+    
+                        <a class="instagram__hover" href="#">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="instagram__post">
+                        <img src="assets/img/instagram/3.jpg" alt="instagram">
+    
+                        <a class="instagram__hover" href="#">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+    
+                    <div class="instagram__post">
+                        <img src="assets/img/instagram/4.jpg" alt="instagram">
+    
+                        <a class="instagram__hover" href="#">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </sectoin>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__cols">
+                    <div class="footer__col">
+                        <div class="footer__navTitle">About us</div>
+                        <ul class="footer__nav">
+                            <li>
+                                <a class="footer__navLink" href="#">Who we are</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Work with us</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Become a supplier</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Investor relations</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Our devices</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Affiliate program</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__col">
+                        <div class="footer__navTitle">Useful links</div>
+                        <ul class="footer__nav">
+                            <li>
+                                <a class="footer__navLink" href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Common FAQs</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Return policy</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Cancellation</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Track orders</a>
+                            </li>
+                        </ul>
+                    </div>                        
+    
+                    <div class="footer__col">
+                        <div class="footer__navTitle">Online shopping</div>
+                        <ul class="footer__nav">
+                            <li>
+                                <a class="footer__navLink" href="#">Men shopping</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Women shopping</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Gift cards</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Home $ living</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Electronics</a>
+                            </li>
+                            <li>
+                                <a class="footer__navLink" href="#">Accessories</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__col">
+                        <div class="div">
+                            <div class="footer__navTitle">experience app on mobile</div>
+                            <div class="footer__app-btns">
+                                <a class="footer__app-btn google-play" href="#"> 
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#android"></use>
+                                    </svg>                        
+                                    <p class="footer__app-btn--Title">
+                                        <span>Get it on</span><br>
+                                        Google&nbsp;Play
+                                    </p>
+                                </a>
+    
+                                <a class="footer__app-btn app-store" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#apple"></use>
+                                    </svg>   
+                                    
+                                    <p class="footer__app-btn--Title">
+                                        <span>Get it on</span><br>
+                                        App&nbsp;Store
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="footer__line"></div>
+    
+                        <div class="footer__socialNetwork">
+                            <div class="footer__socialNetwork--title">Follow us</div>
+                            <div class="footer__socialNetwork--links">
+    
+                                <a class="footer__socialNetwork--link" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#facebook"></use>
+                                    </svg>  
+                                </a>
+    
+                                <a class="footer__socialNetwork--link" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#twitter"></use>
+                                    </svg>  
+                                </a>
+    
+                                <a class="footer__socialNetwork--link" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#pinterest"></use>
+                                    </svg>  
+                                </a>
+    
+                                <a class="footer__socialNetwork--link" href="#">
+                                    <svg>
+                                        <use xlink:href="assets/img/sprite.svg#instagram"></use>
+                                    </svg>  
+                                </a>
+    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+                <div class="footer__copyright">Copyright © 2019 <a href="#">themeies.com.</a> All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+<!-- Jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--Slick slider  https://kenwheeler.github.io/slick/#go-get-it-->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
